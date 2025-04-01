@@ -9,12 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <img 
-                src="/lovable-uploads/ab074514-a676-47af-9299-cb4485213e3f.png" 
-                alt="Mitson Group" 
-                className="h-12 mr-2" 
-              />
-              <div className="flex flex-col ml-2">
+              <div className="flex flex-col">
                 <div className="flex items-center">
                   <span className="text-xl font-bold text-tomato">Marche</span>
                   <span className="text-xl font-bold text-leafgreen ml-1">Mamelles</span>
@@ -27,7 +22,7 @@ const Footer = () => {
             </p>
             <p className="text-gray-600 font-bold flex items-center">
               <span>By</span>
-              <span className="ml-2 text-lg font-bold">MITSON GROUP</span>
+              <span className="ml-2 text-lg font-bold text-nutbrown">MITSON GROUP</span>
             </p>
           </div>
           

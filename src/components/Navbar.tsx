@@ -19,11 +19,7 @@ const Navbar = () => {
             <Link to="/" className="flex items-center">
               <div className="flex items-center">
                 <span className="text-sm font-medium text-gray-600 mr-2">By</span>
-                <img 
-                  src="/lovable-uploads/ab074514-a676-47af-9299-cb4485213e3f.png" 
-                  alt="Mitson Group" 
-                  className="h-12" 
-                />
+                <span className="text-lg font-bold text-nutbrown">MITSON GROUP</span>
               </div>
             </Link>
           </div>
