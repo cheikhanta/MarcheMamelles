@@ -17,9 +17,15 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <span className="text-2xl font-bold text-tomato mr-2">Marche</span>
-              <span className="text-2xl font-bold text-leafgreen">Mamelles</span>
-              <span className="text-xl font-bold text-fruitorange">.sn</span>
+              <img 
+                src="/lovable-uploads/ab074514-a676-47af-9299-cb4485213e3f.png" 
+                alt="Mitson Group" 
+                className="h-12 mr-2" 
+              />
+              <div className="flex flex-col ml-2">
+                <span className="text-2xl font-bold text-tomato">Marche Mamelles</span>
+                <span className="text-xs text-fruitorange">.sn</span>
+              </div>
             </Link>
           </div>
 

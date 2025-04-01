@@ -9,14 +9,26 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <span className="text-2xl font-bold text-tomato mr-1">Marche</span>
-              <span className="text-2xl font-bold text-leafgreen">Mamelles</span>
-              <span className="text-xl font-bold text-fruitorange">.sn</span>
+              <img 
+                src="/lovable-uploads/ab074514-a676-47af-9299-cb4485213e3f.png" 
+                alt="Mitson Group" 
+                className="h-12 mr-2" 
+              />
+              <div className="flex flex-col ml-2">
+                <div className="flex items-center">
+                  <span className="text-xl font-bold text-tomato">Marche</span>
+                  <span className="text-xl font-bold text-leafgreen ml-1">Mamelles</span>
+                  <span className="text-sm font-bold text-fruitorange">.sn</span>
+                </div>
+              </div>
             </div>
             <p className="text-gray-600 mb-4">
               Votre marché en ligne de produits frais, fruits, légumes et jus naturels.
             </p>
-            <p className="text-gray-600 font-bold">Mitson Groupe</p>
+            <p className="text-gray-600 font-bold flex items-center">
+              <span>By</span>
+              <span className="ml-2 text-lg font-bold">MITSON GROUP</span>
+            </p>
           </div>
           
           <div>
