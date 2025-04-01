@@ -3,12 +3,6 @@ import CategoryCard from "./CategoryCard";
 
 const categories = [
   {
-    title: "Tomates",
-    image: "https://images.unsplash.com/photo-1592924357229-3cd69c11f822?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    color: "tomato",
-    link: "/products?category=tomates"
-  },
-  {
     title: "Légumes",
     image: "https://images.unsplash.com/photo-1584270354949-c26b0d5b4a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     color: "leafgreen",
@@ -45,7 +39,7 @@ const Categories = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {categories.map((category, index) => (
             <CategoryCard key={index} {...category} />
           ))}

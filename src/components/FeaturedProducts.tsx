@@ -12,7 +12,7 @@ const products = [
     name: "Tomates Fraîches",
     price: 1200,
     image: "https://images.unsplash.com/photo-1562617452-b3a0901c3f83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    category: "Tomates"
+    category: "Légumes"
   },
   {
     id: 2,
@@ -47,7 +47,7 @@ const products = [
     name: "Tomates Cerises",
     price: 1800,
     image: "https://images.unsplash.com/photo-1592924357229-3cd69c11f822?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    category: "Tomates"
+    category: "Légumes"
   },
   {
     id: 7,
@@ -65,7 +65,8 @@ const products = [
   }
 ];
 
-const categories = ["Tous", "Tomates", "Légumes", "Fruits", "Jus", "Fruits Secs"];
+// Updated categories without "Tomates"
+const categories = ["Tous", "Légumes", "Fruits", "Jus", "Fruits Secs"];
 
 const FeaturedProducts = () => {
   const [activeCategory, setActiveCategory] = useState("Tous");
