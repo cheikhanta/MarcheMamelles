@@ -24,10 +24,20 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-hero-pattern">
+    <div className="min-h-screen flex flex-col">
+      {/* Traditional Senegalese market background */}
+      <div className="fixed inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1551248429-40975aa4de74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2090&q=80" 
+          alt="Marché traditionnel sénégalais" 
+          className="w-full h-full object-cover opacity-25"
+        />
+        <div className="absolute inset-0 bg-amber-900/30 mix-blend-multiply"></div>
+      </div>
+      
       <Navbar />
       
-      <main className="flex-grow">
+      <main className="flex-grow relative z-10">
         {/* Header - with semi-transparent background */}
         <div className="bg-amber-800/80 py-12">
           <div className="container mx-auto px-4 text-center">
@@ -41,7 +51,7 @@ const About = () => {
         {/* Our Story - with semi-transparent background */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-amber-50/90 p-8 rounded-lg shadow-lg">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-amber-50/95 p-8 rounded-lg shadow-lg">
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-amber-800">Notre Histoire</h2>
                 <p className="text-amber-700 mb-4">
@@ -78,16 +88,16 @@ const About = () => {
         {/* Our Values - with semi-transparent background */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12 bg-amber-800/80 py-8 rounded-t-lg">
+            <div className="text-center mb-12 bg-amber-800/90 py-8 rounded-t-lg">
               <h2 className="text-3xl font-bold mb-4 text-amber-50">Nos Valeurs</h2>
               <p className="text-amber-100 max-w-2xl mx-auto">
                 Ces principes guident tout ce que nous faisons
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 bg-amber-50/90 p-8 rounded-b-lg shadow-lg">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 bg-amber-50/95 p-8 rounded-b-lg shadow-lg">
               {values.map((value, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-amber-100">
+                <div key={index} className="bg-white/95 p-6 rounded-lg shadow-md border border-amber-100">
                   <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mb-4">
                     <CheckCircle className="text-amber-700" />
                   </div>
@@ -102,14 +112,14 @@ const About = () => {
         {/* Our Team - with semi-transparent background */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12 bg-amber-800/80 py-8 rounded-t-lg">
+            <div className="text-center mb-12 bg-amber-800/90 py-8 rounded-t-lg">
               <h2 className="text-3xl font-bold mb-4 text-amber-50">Notre Équipe</h2>
               <p className="text-amber-100 max-w-2xl mx-auto">
                 Rencontrez les personnes passionnées qui font de notre marché une réalité
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto bg-amber-50/90 p-8 rounded-b-lg shadow-lg">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto bg-amber-50/95 p-8 rounded-b-lg shadow-lg">
               <div className="text-center">
                 <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 border-4 border-amber-200">
                   <img 
