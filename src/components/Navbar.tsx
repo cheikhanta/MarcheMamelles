@@ -12,33 +12,33 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-amber-50 shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <div className="flex items-center">
-                <span className="text-sm font-medium text-gray-600 mr-2">By</span>
-                <span className="text-lg font-bold text-nutbrown">MITSON GROUP</span>
+                <span className="text-sm font-medium text-amber-800 mr-2">By</span>
+                <span className="text-lg font-bold text-amber-900">MITSON GROUP</span>
               </div>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link to="/" className="text-gray-700 hover:text-tomato font-medium transition-colors">
+            <Link to="/" className="text-amber-800 hover:text-amber-600 font-medium transition-colors">
               Accueil
             </Link>
-            <Link to="/products" className="text-gray-700 hover:text-tomato font-medium transition-colors">
+            <Link to="/products" className="text-amber-800 hover:text-amber-600 font-medium transition-colors">
               Produits
             </Link>
-            <Link to="/about" className="text-gray-700 hover:text-tomato font-medium transition-colors">
+            <Link to="/about" className="text-amber-800 hover:text-amber-600 font-medium transition-colors">
               À propos
             </Link>
-            <Link to="/contact" className="text-gray-700 hover:text-tomato font-medium transition-colors">
+            <Link to="/contact" className="text-amber-800 hover:text-amber-600 font-medium transition-colors">
               Contact
             </Link>
-            <Button className="bg-tomato hover:bg-tomato/90 text-white rounded-full flex items-center gap-2">
+            <Button className="bg-amber-700 hover:bg-amber-800 text-amber-50 rounded-full flex items-center gap-2">
               <ShoppingCart size={18} />
               <span>Panier (0)</span>
             </Button>
@@ -51,6 +51,7 @@ const Navbar = () => {
               size="icon" 
               onClick={toggleMenu}
               aria-label="Toggle menu"
+              className="text-amber-800"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </Button>
@@ -63,33 +64,33 @@ const Navbar = () => {
             <div className="flex flex-col space-y-4">
               <Link 
                 to="/" 
-                className="text-gray-700 hover:text-tomato font-medium transition-colors py-2"
+                className="text-amber-800 hover:text-amber-600 font-medium transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Accueil
               </Link>
               <Link 
                 to="/products" 
-                className="text-gray-700 hover:text-tomato font-medium transition-colors py-2"
+                className="text-amber-800 hover:text-amber-600 font-medium transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Produits
               </Link>
               <Link 
                 to="/about" 
-                className="text-gray-700 hover:text-tomato font-medium transition-colors py-2"
+                className="text-amber-800 hover:text-amber-600 font-medium transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 À propos
               </Link>
               <Link 
                 to="/contact" 
-                className="text-gray-700 hover:text-tomato font-medium transition-colors py-2"
+                className="text-amber-800 hover:text-amber-600 font-medium transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
               </Link>
-              <Button className="bg-tomato hover:bg-tomato/90 text-white rounded-full flex items-center gap-2 w-full justify-center">
+              <Button className="bg-amber-700 hover:bg-amber-800 text-amber-50 rounded-full flex items-center gap-2 w-full justify-center">
                 <ShoppingCart size={18} />
                 <span>Panier (0)</span>
               </Button>
