@@ -38,13 +38,21 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="hidden md:flex justify-end">
-            <div className="relative w-full h-80">
-              <div className="absolute top-0 left-0 w-32 h-32 bg-amber-300/40 rounded-full animate-bounce-slow" style={{ animationDelay: '0.2s' }}></div>
-              <div className="absolute top-20 right-16 w-48 h-48 bg-amber-700/30 rounded-full animate-bounce-slow" style={{ animationDelay: '0.7s' }}></div>
-              <div className="absolute bottom-0 left-20 w-40 h-40 bg-amber-500/30 rounded-full animate-bounce-slow" style={{ animationDelay: '0.5s' }}></div>
-              <div className="absolute bottom-10 right-0 w-28 h-28 bg-amber-600/30 rounded-full animate-bounce-slow" style={{ animationDelay: '0.9s' }}></div>
-              <div className="absolute top-10 left-40 w-36 h-36 bg-amber-200/40 rounded-full animate-bounce-slow" style={{ animationDelay: '0.3s' }}></div>
+          <div className="hidden md:flex justify-end relative">
+            <div className="w-full h-80 relative overflow-hidden rounded-xl shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1551248429-40975aa4de74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2090&q=80" 
+                alt="Femmes au marché" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-amber-800/30 to-transparent"></div>
+            </div>
+            <div className="absolute bottom-5 right-5 w-32 h-32 bg-amber-50 rounded-full overflow-hidden shadow-lg border-4 border-amber-100">
+              <img 
+                src="https://images.unsplash.com/photo-1583922146233-a56c6d9f0b43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80" 
+                alt="Panier de fruits" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
