@@ -31,11 +31,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <MapPin className="text-tomato mr-2" size={18} />
-                <span className="text-gray-600">Derrière l'école Saint-Matte</span>
+                <span className="text-gray-600">Derrière l'école CEMAD</span>
               </div>
               <div className="flex items-center">
                 <Phone className="text-tomato mr-2" size={18} />
-                <span className="text-gray-600">+221 XX XXX XX XX</span>
+                <span className="text-gray-600">+221 78 105 42 01</span>
               </div>
               <div className="flex items-center">
                 <Mail className="text-tomato mr-2" size={18} />
@@ -65,6 +65,11 @@ const Footer = () => {
               <div>
                 <Link to="/contact" className="text-gray-600 hover:text-tomato transition-colors">
                   Contact
+                </Link>
+              </div>
+              <div>
+                <Link to="/login" className="text-gray-600 hover:text-tomato transition-colors">
+                  Créer un compte
                 </Link>
               </div>
             </div>

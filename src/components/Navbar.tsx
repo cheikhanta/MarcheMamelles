@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, ShoppingCart } from "lucide-react";
+import { Menu, X, ShoppingCart, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -44,6 +44,16 @@ const Navbar = () => {
 
           {/* Right side with Mobile Menu Button and Cart */}
           <div className="flex items-center gap-4">
+            <Button 
+              className="bg-amber-700 hover:bg-amber-800 text-amber-50 rounded-full flex items-center gap-2 px-3 py-1" 
+              asChild
+            >
+              <Link to="/login">
+                <User size={18} />
+                <span className="hidden md:inline">Compte</span>
+              </Link>
+            </Button>
+            
             <Button className="bg-amber-700 hover:bg-amber-800 text-amber-50 rounded-full flex items-center gap-2 md:px-4 px-2">
               <ShoppingCart size={18} />
               <span className="hidden md:inline">Panier (0)</span>

@@ -64,7 +64,7 @@ const Contact = () => {
                   <MapPin className="text-tomato" />
                 </div>
                 <h3 className="font-bold mb-2">Adresse</h3>
-                <p className="text-gray-600">Derrière l'école Saint-Matte</p>
+                <p className="text-gray-600">Derrière l'école CEMAD</p>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -72,7 +72,7 @@ const Contact = () => {
                   <Phone className="text-leafgreen" />
                 </div>
                 <h3 className="font-bold mb-2">Téléphone</h3>
-                <p className="text-gray-600">+221 XX XXX XX XX</p>
+                <p className="text-gray-600">+221 78 105 42 01</p>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -131,7 +131,7 @@ const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="+221 XX XXX XX XX"
+                    placeholder="+221 78 105 42 01"
                     className="w-full"
                   />
                 </div>
@@ -174,7 +174,7 @@ const Contact = () => {
             <div className="text-center mb-8">
               <h2 className="text-2xl font-bold mb-4">Notre Emplacement</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Venez nous rendre visite à notre marché situé derrière l'école Saint-Matte
+                Venez nous rendre visite à notre marché situé derrière l'école CEMAD
               </p>
             </div>
             
@@ -184,7 +184,7 @@ const Contact = () => {
                   <MapPin className="w-12 h-12 mx-auto mb-4 text-tomato" />
                   <p className="text-gray-600">
                     Carte interactive bientôt disponible. <br />
-                    Notre adresse: Derrière l'école Saint-Matte
+                    Notre adresse: Derrière l'école CEMAD
                   </p>
                 </div>
               </div>
