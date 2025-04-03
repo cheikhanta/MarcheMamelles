@@ -24,24 +24,24 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-hero-pattern">
       <Navbar />
       
       <main className="flex-grow">
-        {/* Header */}
-        <div className="bg-gradient-to-r from-amber-100 to-amber-50 py-12">
+        {/* Header - with semi-transparent background */}
+        <div className="bg-amber-800/80 py-12">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-4 text-amber-800">À Propos de Nous</h1>
-            <p className="text-amber-700 max-w-2xl mx-auto">
+            <h1 className="text-4xl font-bold mb-4 text-amber-50">À Propos de Nous</h1>
+            <p className="text-amber-100 max-w-2xl mx-auto">
               Découvrez l'histoire de notre marché traditionnel et notre engagement envers la qualité et la fraîcheur.
             </p>
           </div>
         </div>
         
-        {/* Our Story */}
+        {/* Our Story - with semi-transparent background */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-amber-50/90 p-8 rounded-lg shadow-lg">
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-amber-800">Notre Histoire</h2>
                 <p className="text-amber-700 mb-4">
@@ -75,17 +75,17 @@ const About = () => {
           </div>
         </section>
         
-        {/* Our Values */}
-        <section className="py-16 bg-amber-50">
+        {/* Our Values - with semi-transparent background */}
+        <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-amber-800">Nos Valeurs</h2>
-              <p className="text-amber-700 max-w-2xl mx-auto">
+            <div className="text-center mb-12 bg-amber-800/80 py-8 rounded-t-lg">
+              <h2 className="text-3xl font-bold mb-4 text-amber-50">Nos Valeurs</h2>
+              <p className="text-amber-100 max-w-2xl mx-auto">
                 Ces principes guident tout ce que nous faisons
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 bg-amber-50/90 p-8 rounded-b-lg shadow-lg">
               {values.map((value, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-amber-100">
                   <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mb-4">
@@ -99,17 +99,17 @@ const About = () => {
           </div>
         </section>
         
-        {/* Our Team */}
+        {/* Our Team - with semi-transparent background */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-amber-800">Notre Équipe</h2>
-              <p className="text-amber-700 max-w-2xl mx-auto">
+            <div className="text-center mb-12 bg-amber-800/80 py-8 rounded-t-lg">
+              <h2 className="text-3xl font-bold mb-4 text-amber-50">Notre Équipe</h2>
+              <p className="text-amber-100 max-w-2xl mx-auto">
                 Rencontrez les personnes passionnées qui font de notre marché une réalité
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto bg-amber-50/90 p-8 rounded-b-lg shadow-lg">
               <div className="text-center">
                 <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 border-4 border-amber-200">
                   <img 
