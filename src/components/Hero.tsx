@@ -5,13 +5,21 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="relative bg-hero-pattern py-16 md:py-24 text-white">
+    <div className="relative senegalese-market-bg py-16 md:py-24 text-white">
       {/* Dark overlay to ensure text is readable */}
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left space-y-4">
+            <div className="flex justify-center md:justify-start mb-4">
+              <div className="flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+                <span className="text-2xl font-bold text-amber-300">Marche</span>
+                <span className="text-2xl font-bold text-amber-100 ml-1">Mamelles</span>
+                <span className="text-sm font-bold text-amber-200">.sn</span>
+              </div>
+            </div>
+            
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
               <span className="text-amber-200">Authentique</span> et{" "}
               <span className="text-amber-300">Traditionnel</span>, Directement du Marché

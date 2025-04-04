@@ -23,7 +23,7 @@ const AboutSection = () => {
               légumes, fruits, jus naturels et fruits secs de la plus haute qualité.
             </p>
             <p className="text-gray-600 mb-6">
-              Situé derrière l'école Saint-Matte, notre marché combine les traditions du 
+              Situé derrière l'école CEMAD, notre marché combine les traditions du 
               commerce local avec la commodité des achats en ligne.
             </p>
             

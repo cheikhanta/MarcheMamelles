@@ -22,7 +22,11 @@ const Footer = () => {
             </p>
             <p className="text-gray-600 font-bold flex items-center">
               <span>By</span>
-              <span className="ml-2 text-lg font-bold text-nutbrown">MITSON GROUP</span>
+              <img 
+                src="/lovable-uploads/mitson-logo.png" 
+                alt="MITSON GROUP" 
+                className="ml-2 h-6" 
+              />
             </p>
           </div>
           
