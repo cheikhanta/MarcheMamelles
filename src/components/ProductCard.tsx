@@ -8,11 +8,12 @@ interface ProductCardProps {
   price: number;
   image: string;
   category: string;
+  unit?: string;
 }
 
-const ProductCard = ({ id, name, price, image, category }: ProductCardProps) => {
+const ProductCard = ({ id, name, price, image, category, unit = "kg" }: ProductCardProps) => {
   return (
-    <div className="product-card bg-white">
+    <div className="product-card bg-white rounded-lg shadow-md overflow-hidden">
       <div className="relative overflow-hidden">
         <div className="absolute top-2 right-2 z-10 bg-white px-2 py-1 rounded-full text-xs font-medium">
           {category}
@@ -21,14 +22,14 @@ const ProductCard = ({ id, name, price, image, category }: ProductCardProps) => 
           <img 
             src={image} 
             alt={name} 
-            className="product-image w-full h-full object-cover"
+            className="product-image w-full h-full object-cover transition-transform duration-300 hover:scale-105"
           />
         </div>
       </div>
       <div className="p-4">
         <h3 className="font-semibold text-lg mb-1">{name}</h3>
         <div className="flex justify-between items-center mt-2">
-          <span className="text-tomato font-bold">{price.toLocaleString()} FCFA</span>
+          <span className="text-tomato font-bold">{price.toLocaleString()} FCFA/{unit}</span>
           <Button className="bg-leafgreen hover:bg-leafgreen/90 h-9 w-9 p-0 rounded-full">
             <ShoppingCart size={16} />
           </Button>

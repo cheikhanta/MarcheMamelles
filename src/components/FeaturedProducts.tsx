@@ -1,67 +1,74 @@
 
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import ProductCard from "./ProductCard";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-// Sample product data
+// Sample product data with pricing per unit
 const products = [
   {
     id: 1,
     name: "Tomates Fraîches",
     price: 1200,
     image: "https://images.unsplash.com/photo-1562617452-b3a0901c3f83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    category: "Légumes"
+    category: "Légumes",
+    unit: "kg"
   },
   {
     id: 2,
     name: "Carottes Bio",
     price: 800,
     image: "https://images.unsplash.com/photo-1447175008436-054170c2e979?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2999&q=80",
-    category: "Légumes"
+    category: "Légumes",
+    unit: "kg"
   },
   {
     id: 3,
     name: "Oranges Juteuses",
     price: 1500,
     image: "https://images.unsplash.com/photo-1547514701-42782101795e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80",
-    category: "Fruits"
+    category: "Fruits",
+    unit: "kg"
   },
   {
     id: 4,
     name: "Jus d'Ananas",
-    price: 2000,
+    price: 1500,
     image: "https://images.unsplash.com/photo-1596392301391-8a8641869abd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-    category: "Jus"
+    category: "Jus",
+    unit: "L"
   },
   {
     id: 5,
     name: "Amandes Séchées",
     price: 3500,
     image: "https://images.unsplash.com/photo-1574723507015-7c5a74f4abb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    category: "Fruits Secs"
+    category: "Fruits Secs",
+    unit: "kg"
   },
   {
-    id: 6,
-    name: "Tomates Cerises",
-    price: 1800,
-    image: "https://images.unsplash.com/photo-1592924357229-3cd69c11f822?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    category: "Légumes"
+    id: 18,
+    name: "Arachides",
+    price: 2800,
+    image: "https://images.unsplash.com/photo-1566745914757-0a92083f4dae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    category: "Fruits Secs",
+    unit: "kg"
   },
   {
-    id: 7,
-    name: "Poivrons Multicolores",
-    price: 1200,
-    image: "https://images.unsplash.com/photo-1520136062128-83af875f5e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80",
-    category: "Légumes"
+    id: 16,
+    name: "Jus d'Orange",
+    price: 1500,
+    image: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80",
+    category: "Jus",
+    unit: "L"
   },
   {
-    id: 8,
-    name: "Jus de Fruits Rouges",
-    price: 2500,
-    image: "https://images.unsplash.com/photo-1638439430466-b65db9ba96a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-    category: "Jus"
+    id: 13,
+    name: "Mangues",
+    price: 2000,
+    image: "https://images.unsplash.com/photo-1553279768-865429fa0078?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+    category: "Fruits",
+    unit: "kg"
   }
 ];
 
