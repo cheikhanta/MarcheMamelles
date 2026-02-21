@@ -11,7 +11,7 @@ const products = [
     id: 1,
     name: "Tomates Fraîches",
     price: 1200,
-    image: "https://images.unsplash.com/photo-1562617452-b3a0901c3f83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    image: "https://images.unsplash.com/photo-1546470427-0d4db154ceb8?auto=format&fit=crop&w=2070&q=80",
     category: "Légumes",
     unit: "kg"
   },
