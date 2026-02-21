@@ -11,7 +11,7 @@ const products = [
     id: 1,
     name: "Tomates Fraîches",
     price: 1200,
-    image: "https://images.unsplash.com/photo-1546470427-0d4db154ceb8?auto=format&fit=crop&w=2070&q=80",
+    image: "https://images.unsplash.com/photo-1518977822534-7049a61ee0c2?auto=format&fit=crop&w=2070&q=80",
     category: "Légumes",
     unit: "kg"
   },
@@ -35,7 +35,7 @@ const products = [
     id: 4,
     name: "Jus d'Ananas",
     price: 1500,
-    image: "https://images.unsplash.com/photo-1596392301391-8a8641869abd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
+    image: "https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?auto=format&fit=crop&w=2071&q=80",
     category: "Jus",
     unit: "L"
   },
@@ -43,7 +43,7 @@ const products = [
     id: 5,
     name: "Amandes Séchées",
     price: 3500,
-    image: "https://images.unsplash.com/photo-1574723507015-7c5a74f4abb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    image: "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?auto=format&fit=crop&w=2070&q=80",
     category: "Fruits Secs",
     unit: "kg"
   },
@@ -51,7 +51,7 @@ const products = [
     id: 18,
     name: "Arachides",
     price: 2800,
-    image: "https://images.unsplash.com/photo-1566745914757-0a92083f4dae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    image: "https://images.unsplash.com/photo-1567892737950-30c4db37cd89?auto=format&fit=crop&w=2070&q=80",
     category: "Fruits Secs",
     unit: "kg"
   },

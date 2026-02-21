@@ -7,6 +7,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Search } from "lucide-react";
+import jusFruitsRougesImg from "@/assets/jus-fruits-rouges.jpg";
+import jusGingembreImg from "@/assets/jus-gingembre.jpg";
+import dattesImg from "@/assets/dattes.jpg";
 
 // Updated product data with 5 examples for each category
 const allProducts = [
@@ -15,7 +18,7 @@ const allProducts = [
     id: 1,
     name: "Tomates Fraîches",
     price: 1200,
-    image: "https://images.unsplash.com/photo-1546470427-0d4db154ceb8?auto=format&fit=crop&w=2070&q=80",
+    image: "https://images.unsplash.com/photo-1518977822534-7049a61ee0c2?auto=format&fit=crop&w=2070&q=80",
     category: "Légumes",
     unit: "kg"
   },
@@ -99,7 +102,7 @@ const allProducts = [
     id: 4,
     name: "Jus d'Ananas",
     price: 1500,
-    image: "https://images.unsplash.com/photo-1596392301391-8a8641869abd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
+    image: "https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?auto=format&fit=crop&w=2070&q=80",
     category: "Jus",
     unit: "L"
   },
@@ -107,7 +110,7 @@ const allProducts = [
     id: 8,
     name: "Jus de Fruits Rouges",
     price: 1500,
-    image: "https://images.unsplash.com/photo-1638439430466-b65db9ba96a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
+    image: jusFruitsRougesImg,
     category: "Jus",
     unit: "L"
   },
@@ -131,7 +134,7 @@ const allProducts = [
     id: 17,
     name: "Jus de Gingembre",
     price: 1500,
-    image: "https://images.unsplash.com/photo-1634481570432-0987f7f89905?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+    image: jusGingembreImg,
     category: "Jus",
     unit: "L"
   },
@@ -141,7 +144,7 @@ const allProducts = [
     id: 5,
     name: "Amandes Séchées",
     price: 3500,
-    image: "https://images.unsplash.com/photo-1574723507015-7c5a74f4abb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    image: "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?auto=format&fit=crop&w=2070&q=80",
     category: "Fruits Secs",
     unit: "kg"
   },
@@ -149,7 +152,7 @@ const allProducts = [
     id: 11,
     name: "Noix de Cajou",
     price: 4000,
-    image: "https://images.unsplash.com/photo-1644704265406-d6351c89bb8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+    image: "https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=1974&q=80",
     category: "Fruits Secs",
     unit: "kg"
   },
@@ -157,7 +160,7 @@ const allProducts = [
     id: 18,
     name: "Arachides",
     price: 2800,
-    image: "https://images.unsplash.com/photo-1566745914757-0a92083f4dae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    image: "https://images.unsplash.com/photo-1567892737950-30c4db37cd89?auto=format&fit=crop&w=2070&q=80",
     category: "Fruits Secs",
     unit: "kg"
   },
@@ -165,7 +168,7 @@ const allProducts = [
     id: 19,
     name: "Raisins Secs",
     price: 3200,
-    image: "https://images.unsplash.com/photo-1596567165367-3a9ab35215b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    image: "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?auto=format&fit=crop&w=2070&q=80",
     category: "Fruits Secs",
     unit: "kg"
   },
@@ -173,7 +176,7 @@ const allProducts = [
     id: 20,
     name: "Dattes",
     price: 3000,
-    image: "https://images.unsplash.com/photo-1567019125770-245e6917f637?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80",
+    image: dattesImg,
     category: "Fruits Secs",
     unit: "kg"
   }
