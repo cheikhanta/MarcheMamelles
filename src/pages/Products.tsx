@@ -15,7 +15,7 @@ const allProducts = [
     id: 1,
     name: "Tomates Fraîches",
     price: 1200,
-    image: "https://images.unsplash.com/photo-1562617452-b3a0901c3f83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    image: "https://images.unsplash.com/photo-1546470427-0d4db154ceb8?auto=format&fit=crop&w=2070&q=80",
     category: "Légumes",
     unit: "kg"
   },
@@ -31,7 +31,7 @@ const allProducts = [
     id: 6,
     name: "Tomates Cerises",
     price: 1800,
-    image: "https://images.unsplash.com/photo-1592924357229-3cd69c11f822?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    image: "https://images.unsplash.com/photo-1558818498-28c1e002b655?auto=format&fit=crop&w=2070&q=80",
     category: "Légumes",
     unit: "kg"
   },
@@ -39,7 +39,7 @@ const allProducts = [
     id: 7,
     name: "Poivrons Multicolores",
     price: 1200,
-    image: "https://images.unsplash.com/photo-1520136062128-83af875f5e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80",
+    image: "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?auto=format&fit=crop&w=2187&q=80",
     category: "Légumes",
     unit: "kg"
   },
